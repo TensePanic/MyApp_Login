@@ -21,16 +21,16 @@ class ExampleUnitTest {
 
     @Test
     fun loginSuccessful_whenCorrectCredentials() {
-        assertTrue(verification.verify("ala07@gmail.com", "test123"))
+        assertTrue(verification.verifyEmailAndPassword("ala07@gmail.com", "test123"))
     }
 
     @Test
     fun loginSuccessful_whenWrongEmail() {
-        assertFalse(verification.verify("ala@gmail.com", "test123"))
+        assertFalse(verification.verifyEmailAndPassword("ala@gmail.com", "test123"))
     }
 
     @Test
     fun loginSuccessful_whenWrongPassword() {
-        assertFalse(verification.verify("ala07@gmail.com", "test12345"))
+        assertFalse(verification.verifyEmailAndPassword("ala07@gmail.com", "test12345"))
     }
 }
