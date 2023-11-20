@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         if (loginVerification.verify(email.text.toString(), password.text.toString())) {
-            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Login Successful :)", Toast.LENGTH_SHORT).show()
         } else {
-            Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Login Failed :(", Toast.LENGTH_SHORT).show()
         }
         //Toast.makeText(this, "Login pressed", Toast.LENGTH_SHORT).show()
     }
